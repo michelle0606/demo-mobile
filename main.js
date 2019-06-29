@@ -24,11 +24,3 @@ function displayData(data) {
     }
   })
 }
-
-function search() {
-  console.log(this.id)
-}
-
-button.forEach(b => {
-  b.addEventListener('click', search)
-})
