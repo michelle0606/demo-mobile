@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display:400i|Lato&display=swap");
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #9ba2a6;
+  z-index: 100;
+}
+
+header #logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  margin: auto;
+  color: #2e7ba0;
+}
+
+.search-field {
+  padding-top: 60px;
+  background-color: #fde065;
+  color: #fff;
+  height: 180px;
+}
+
+.search-field .area-filter {
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px;
+      grid-template-columns: 1fr 40px;
+      grid-template-areas: 'input button';
+}
+
+.search-field .area-filter input {
+  font-size: 16px;
+  padding: 10px;
+  height: 40px;
+  color: #50514f;
+  border: 1px solid #9ba2a6;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: input;
+}
+
+.search-field .area-filter button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: #fde065;
+  background-color: #2e7ba0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: button;
+}
+
+.search-field .calender-button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 44px;
+      grid-template-columns: 1fr 1fr 44px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'start end people';
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.search-field .calender-button div {
+  background-color: #fff;
+  border: 1px solid #9ba2a6;
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 8px;
+  text-align: left;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  vertical-align: middle;
+  width: 100%;
+  color: #50514f;
+}
+
+.search-field .calender-button div label {
+  display: block;
+}
+
+.search-field .calender-button div input {
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+  border: none;
+  padding: 0px;
+  width: -webkit-fill-available;
+}
+
+.search-field .calender-button div:nth-child(1), .search-field .calender-button div:nth-child(2) {
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-field .calender-button div:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: people;
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-field .calender-button div:nth-child(3) i {
+  position: absolute;
+}
+
+.search-field .calender-button div:nth-child(3) select {
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+  height: 100%;
+  border: none;
+  -webkit-appearance: none;
+  /*Chrome*/
+  -moz-appearance: none;
+  /*FF*/
+  appearance: none;
+  /*CSS3*/
+}
+
+.search-field .calender-button div:nth-child(3) select::-ms-expand {
+  display: none;
+  /*IE*/
+}
+
+:focus {
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.start-date,
+.end-date {
+  font-weight: bold;
+}
+
+.suggestion .list {
+  position: relative;
+  margin: 20px 0px;
+  width: 100vw;
+  overflow: hidden;
+  display: block;
+}
+
+.suggestion .list div {
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.suggestion .list .cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: inherit;
+}
+
+.suggestion .list .cover:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+input[type='date']::-webkit-inner-spin-button {
+  visibility: hidden;
+}
+
+.startDate {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: start;
+}
+
+.endDate {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: end;
+}
+/*# sourceMappingURL=mobile.css.map */

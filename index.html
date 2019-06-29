@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="web.css" />
+    <script src="https://kit.fontawesome.com/2e90554d29.js"></script>
+    </head>
+    <title>EagleEyes</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        EagleEyes
+      </div>
+    </header>
+    <div class="search-field">
+      <div class="area-filter">
+        <input type="text" placeholder="旅遊地點" value="台灣" />
+        <button type="button" id="place"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="calender-button">
+        <div class="startDate" >
+          <label for="startDate">開始旅行</label>
+          <input type="date" id="startDate"  value="2019-07-02">
+        </div>
+        <div class="endDate">
+          <label for="endDate">滿載而歸</label>
+          <input type="date" id="endDate" value="2019-07-05">
+        </div>
+        <div>
+          <i class="fas fa-user-friends"></i>
+          <select id="guestCount">
+            <option style="display: none"></option>
+            <option value="">獨自旅行</option>
+            <option value="">情侶出遊</option>
+            <option value="">朋友相聚</option>
+            <option value="">親子活動</option>
+            <option value="">多人團遊</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="suggestion">
+      
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
