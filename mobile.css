@@ -164,6 +164,7 @@ button {
 }
 
 .suggestion .list div {
+  width: inherit;
   position: absolute;
   bottom: 0;
   color: #000;
